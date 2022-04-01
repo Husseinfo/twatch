@@ -26,9 +26,10 @@ def get_last_n_tweets(n=10) -> list:
     global driver
     tweets = []
     first_tweet = 'section > div > div > div:nth-child(1)'
-
     try:
         WebDriverWait(driver, 30).until(lambda _driver: _driver.find_element_by_css_selector(first_tweet))
+        tweets = [x.text for x in
+                  driver.find_element_by_css_selector('section > div > div').find_elements_by_css_selector('*')[:n]]
     except Exception as e:
         print(f'Error occurred: {e}')
     return tweets
