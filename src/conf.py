@@ -21,5 +21,9 @@ def get_delay():
     return conf['check_every']
 
 
-def get_bot_token():
+def get_telegram_bot_token():
     return conf['telegram']['bot_token']
+
+
+def get_telegram_user_id():
+    return conf['telegram']['user_id']

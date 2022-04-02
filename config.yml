@@ -3,9 +3,12 @@ twitter:
   users:
     - fifacom
 
-# Telegram bot secret token (https://core.telegram.org/bots)
 telegram:
+  # Telegram bot secret token (https://core.telegram.org/bots)
   bot_token: DDDDDDDDDD:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+  # get your telegram user ID from userinfo bot https://t.me/userinfobot
+  user_id: DDDDDDDDDD
 
 # in seconds
 check_every: 120
