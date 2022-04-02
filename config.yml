@@ -4,3 +4,6 @@ users:
 
 # in seconds
 check_every: 120
+
+# Telegram bot secret token (https://core.telegram.org/bots)
+bot_token: DDDDDDDDDD:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
