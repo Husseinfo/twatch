@@ -1,9 +1,11 @@
 # Twitter users to watch
-users:
-  - fifacom
+twitter:
+  users:
+    - fifacom
+
+# Telegram bot secret token (https://core.telegram.org/bots)
+telegram:
+  bot_token: DDDDDDDDDD:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 # in seconds
 check_every: 120
-
-# Telegram bot secret token (https://core.telegram.org/bots)
-bot_token: DDDDDDDDDD:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX

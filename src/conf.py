@@ -14,8 +14,12 @@ except Exception as e:
 
 
 def get_users():
-    return conf['users']
+    return conf['twitter']['users']
 
 
 def get_delay():
-    return conf['users']
+    return conf['check_every']
+
+
+def get_bot_token():
+    return conf['telegram']['bot_token']
