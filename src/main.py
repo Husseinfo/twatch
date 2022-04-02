@@ -1,9 +1,10 @@
-from web import init, get_last_n_tweets
+from conf import get_users
+from web import get_last_n_tweets
 
 
 def main():
-    init()
-    tweets = get_last_n_tweets()
+    for user in get_users():
+        tweets = get_last_n_tweets(user)
 
 
 if __name__ == '__main__':

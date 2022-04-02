@@ -7,10 +7,9 @@ from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.webdriver.support.ui import WebDriverWait
 
 driver: WebDriver
-username: str = 'fifacom'
 
 
-def init():
+def init(username):
     global driver
     environ['PATH'] += f':{Path(__file__).parent.parent}/driver/'
 
@@ -22,7 +21,8 @@ def init():
     driver.get(f'https://twitter.com/{username}')
 
 
-def get_last_n_tweets(n=10) -> list:
+def get_last_n_tweets(username, n=10) -> list:
+    init(username)
     global driver
     tweets = []
     first_tweet = 'section > div > div > div:nth-child(1)'

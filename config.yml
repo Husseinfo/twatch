@@ -1,0 +1,6 @@
+# Twitter users to watch
+users:
+  - fifacom
+
+# in seconds
+check_every: 120
