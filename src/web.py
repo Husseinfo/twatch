@@ -16,6 +16,7 @@ def init(username):
     options = Options()
     options.add_argument(f"--user-data-dir={Path(__file__).parent.parent}/chrome/")
     options.add_argument('--profile-directory=Profile 1')
+    options.add_argument('--headless')
     driver = webdriver.Chrome(options=options)
 
     driver.get(f'https://twitter.com/{username}')
